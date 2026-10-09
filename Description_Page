@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Riyuuu ❤️</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(270deg, #ffdee9, #b5fffc);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 50px;
+      font-size: 2.5em;
+      color: #e63946;
+    }
+    section {
+      padding: 40px;
+    }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    footer {
+      padding: 20px;
+      background: #fff;
+      font-style: italic;
+    }
+    @keyframes gradientShift {
+      0% {background-position:0% 50%;}
+      50% {background-position:100% 50%;}
+      100% {background-position:0% 50%;}
+    }
+    @keyframes floatUp {
+      from {transform: translateY(0);}
+      to {transform: translateY(-120vh);}
+    }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+    .timeline li {
+      margin: 20px 0;
+      padding: 10px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    For My Love, Riyuuu 💕
+  </header>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <section>
+    <h2>Our Story</h2>
+    <p>From the first smile to endless adventures, every moment with you is magic.</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Memories</h2>
+    <img src="photo1.jpg" alt="Memory 1">
+    <img src="photo2.jpg" alt="Memory 2">
+    <img src="photo3.jpg" alt="Memory 3">
+  </section>
+
+  <section>
+    <h2>Our Journey</h2>
+    <ul class="timeline">
+      <li>🌸 First Meeting – March 2022</li>
+      <li>🌄 First Trip Together – July 2022</li>
+      <li>💍 Special Moment – December 2023</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Special Message</h2>
+    <p>You are my sunshine, my adventure, and my forever. 🌄</p>
+  </section>
+
+  <footer>
+    Made with ❤️ by Rajat
+  </footer>
+
+  <!-- Floating Hearts -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.innerHTML = '❤️';
+      heart.style.position = 'fixed';
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.top = '100%';
+      heart.style.fontSize = '24px';
+      heart.style.animation = 'floatUp 5s linear forwards';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(createHeart, 1000);
+  </script>
+</body>
+</html>
